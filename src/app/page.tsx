@@ -314,51 +314,59 @@ export default function Home() {
     </div>
   </div>
 </section>
-
-        {/* Recent Projects Section */}
       
 {/* Recent Projects Section */}
 <SlideInSection direction="left" className="">
-  <section className="bg-gray-50 py-16">
+  <section className="bg-[#F5F5F5] py-20">
     <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
       <div className="text-center">
         <h2 className="text-3xl font-bold text-gray-900">
-          Featured Projects
+          Proven Excellence Across West Africa
         </h2>
-        <p className="mt-4 max-w-2xl mx-auto text-gray-700 text-sm sm:text-base">
-          From high-rise residential buildings to infrastructure development across cities, our portfolio reflects a strong commitment to quality, durability, and innovation. These featured project types represent the scale and diversity of work handled by our expert team across Nigeria and West Africa.
+        <p className="mt-4 max-w-2xl mx-auto text-gray-700 text-base">
+          From residential estates and commercial complexes to roads and drainage infrastructure, our featured portfolio reflects the scale, versatility, and craftsmanship Sinocle is known for.
         </p>
         <div className="mt-2 flex justify-center">
           <span className="inline-block w-12 h-[2px] bg-[#0D8C6D]"></span>
         </div>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-6 mt-10">
+      <div className="grid md:grid-cols-3 gap-6 mt-12">
         {[
           {
             image: "/images/r1.png",
             title: "Urban Commercial Complex",
+            category: "Commercial",
             description:
               "Multi-story developments designed for businesses and commerce — combining aesthetics, safety, and functionality.",
           },
           {
             image: "/images/r2.png",
             title: "Private Residential Estate",
+            category: "Residential",
             description:
               "Gated residential layouts with modern housing units, green areas, internal roads, and utility infrastructure.",
           },
           {
             image: "/images/r3.png",
             title: "Infrastructure & Drainage Works",
+            category: "Infrastructure",
             description:
               "Urban roadways, stormwater drainages, culverts, and erosion control systems built for long-term resilience.",
+          },
+          {
+            image: "/images/r4.png",
+            title: "Real Estate Partnership Build",
+            category: "Real Estate",
+            description:
+              "Collaborative property developments executed for real estate firms seeking reliable construction delivery.",
           },
         ].map((project, index) => (
           <div
             key={index}
-            className="bg-white shadow-md rounded-lg overflow-hidden"
+            className="relative bg-white shadow-md rounded-lg overflow-hidden transition hover:shadow-lg"
           >
-            <div className="relative w-full h-48">
+            <div className="relative w-full h-52">
               <Image
                 src={project.image}
                 alt={project.title}
@@ -366,31 +374,26 @@ export default function Home() {
                 objectFit="cover"
                 className="rounded-t-lg"
               />
+              <div className="absolute top-2 left-2 bg-[#0D8C6D] text-white text-xs px-3 py-1 uppercase rounded-sm">
+                {project.category}
+              </div>
             </div>
-            <div className="p-6 text-center">
-              <h4 className="text-lg font-semibold text-gray-800">
+            <div className="p-5">
+              <h4 className="text-lg font-semibold text-gray-900">
                 {project.title}
               </h4>
-              <p className="text-[#999999] text-sm mt-2">
+              <p className="text-sm text-gray-600 mt-2">
                 {project.description}
               </p>
-              <Link href="/projects">
-                <button className="mt-4 border border-gray-800 text-gray-800 py-2 px-4 hover:bg-gray-800 hover:text-white transition">
-                  View Project
-                </button>
-              </Link>
             </div>
           </div>
         ))}
       </div>
 
-      <div className="text-center mt-10">
+      <div className="text-center mt-12">
         <Link href="/projects">
-          <button className="border border-gray-800 text-gray-800 py-2 px-6 hover:bg-gray-800 hover:text-white transition">
-            View All{" "}
-            <span className="ml-2 font-serif text-[16px] leading-[10px]">
-              ↗
-            </span>
+          <button className="bg-[#0D8C6D] text-white py-3 px-6 hover:bg-[#38d1ab] transition font-medium rounded">
+            Explore Our Project Portfolio ↗
           </button>
         </Link>
       </div>
