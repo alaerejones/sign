@@ -138,12 +138,12 @@ export default function Home() {
                     {
                       icon: "/images/engineer.svg",
                       title: "Construction/Real Estate Development",
-                      description: "Quality services rendered to all planning.",
+                      description: "As a leading construction and real estate development company in Nigeria, we provide full-service solutions including site preparation, land acquisition, structural construction, property development, and finishing. Our team handles residential buildings, commercial projects, and public infrastructure across West Africa.",
                     },
                     {
                       icon: "/images/ruler.svg",
                       title: "Architectural Design",
-                      description: "Quality services rendered to all planning.",
+                      description: "We offer professional architectural design services in Nigeria, Lome (Togo), Ghana and other African countries, delivering functional and visually compelling building plans and designs that meet regulatory standards and client goals. Whether for private homes, commercial complexes, public or government infrastructure projects, we ensure your vision is turned into an efficient, buildable design.",
                     },
                     {
                       icon: "/images/consultation.svg",
