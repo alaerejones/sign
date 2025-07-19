@@ -350,7 +350,7 @@ export default function Home() {
               "Gated residential layouts with modern housing units, green areas, internal roads, and utility infrastructure.",
           },
           {
-            image: "/images/real_estate.jpg",
+            image: "/images/infrastructure.jpg",
             title: "Infrastructure & Drainage Works",
             category: "Infrastructure",
             description:
