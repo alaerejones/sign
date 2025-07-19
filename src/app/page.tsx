@@ -228,7 +228,7 @@ export default function Home() {
           </h5>
           <h2 className="text-2xl font-bold mt-2">Our Services</h2>
           <p className="text-lg mt-4">
-            Sinocle Nigeria Limited offers full-spectrum construction and real estate services in Nigeria, Ghana, and Togo — including architectural design, infrastructure development, project management, and property consulting. Our team is committed to delivering quality, innovation, and compliance across every project.
+            Sinocle Nigeria Limited offers full-spectrum construction and real estate services in Nigeria, Ghana, and Togo including architectural design, infrastructure development, project management and property consulting. Our team is committed to delivering quality, innovation and compliance across every project.
           </p>
           <Link href="/services">
             <button className="mt-6 border border-white text-white py-2 px-6 hover:bg-white hover:text-[#0D8C6D] transition">
@@ -243,7 +243,7 @@ export default function Home() {
           <div className="flex items-start gap-4 border-t border-white pt-4">
             <span className="text-2xl text-white">🏛</span>
             <div>
-              <h4 className="text-xl font-semibold">Architectural Design Services</h4>
+              <h4 className="text-xl font-semibold">Architectural Design</h4>
               <p className="text-sm">
                 Innovative and functional architectural design solutions, including concept development, building plans, 3D visualization, and regulatory approvals.
               </p>
@@ -255,7 +255,7 @@ export default function Home() {
             <div>
               <h4 className="text-xl font-semibold">Building Construction</h4>
               <p className="text-sm">
-                Comprehensive building construction services — from foundation to finishing — for residential, commercial, and institutional projects.
+                Comprehensive building construction services, from foundation to finishing for residential, commercial, institutional and government projects.
               </p>
             </div>
           </div>
@@ -275,7 +275,7 @@ export default function Home() {
             <div>
               <h4 className="text-xl font-semibold">Infrastructure Development</h4>
               <p className="text-sm">
-                Construction of roads, drainages, erosion control systems, and other civil works — delivered with technical precision and sustainability in mind.
+                Construction of roads, drainages, erosion control systems, and other civil works, delivered with technical precision and sustainability in mind.
               </p>
             </div>
           </div>
@@ -319,19 +319,21 @@ export default function Home() {
 <SlideInSection direction="left" className="">
   <section className="bg-[#F5F5F5] py-20">
     <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
+      {/* Section Title */}
       <div className="text-center">
-        <h2 className="text-2xl font-bold text-gray-900">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
           Proven Excellence Across West Africa
         </h2>
-        <p className="mt-4 max-w-2xl mx-auto text-gray-700 text-base">
+        <p className="mt-4 max-w-2xl mx-auto text-gray-700 text-base md:text-lg">
           From residential estates and commercial complexes to roads and drainage infrastructure, our featured portfolio reflects the scale, versatility, and craftsmanship Sinocle is known for.
         </p>
-        <div className="mt-2 flex justify-center">
+        <div className="mt-3 flex justify-center">
           <span className="inline-block w-12 h-[2px] bg-[#0D8C6D]"></span>
         </div>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-6 mt-12">
+      {/* Project Cards */}
+      <div className="grid md:grid-cols-3 gap-8 mt-14">
         {[
           {
             image: "/images/r1.png",
@@ -366,7 +368,8 @@ export default function Home() {
             key={index}
             className="relative bg-white shadow-md rounded-lg overflow-hidden transition hover:shadow-lg"
           >
-            <div className="relative w-full h-52">
+            {/* Portrait-Friendly Image Height */}
+            <div className="relative w-full h-[440px]">
               <Image
                 src={project.image}
                 alt={project.title}
@@ -374,7 +377,7 @@ export default function Home() {
                 objectFit="cover"
                 className="rounded-t-lg"
               />
-              <div className="absolute top-2 left-2 bg-[#0D8C6D] text-white text-xs px-3 py-1 uppercase rounded-sm">
+              <div className="absolute top-3 left-3 bg-[#0D8C6D] text-white text-[11px] tracking-wide px-3 py-[3px] uppercase rounded-sm">
                 {project.category}
               </div>
             </div>
@@ -382,7 +385,7 @@ export default function Home() {
               <h4 className="text-lg font-semibold text-gray-900">
                 {project.title}
               </h4>
-              <p className="text-sm text-gray-600 mt-2">
+              <p className="text-sm text-gray-600 mt-2 leading-relaxed">
                 {project.description}
               </p>
             </div>
@@ -390,7 +393,8 @@ export default function Home() {
         ))}
       </div>
 
-      <div className="text-center mt-12">
+      {/* CTA Button */}
+      <div className="text-center mt-14">
         <Link href="/projects">
           <button className="bg-[#0D8C6D] text-white py-3 px-6 hover:bg-[#38d1ab] transition font-medium rounded">
             Explore Our Project Portfolio ↗
