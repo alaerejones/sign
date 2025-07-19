@@ -148,7 +148,7 @@ export default function Home() {
                     {
                       icon: "/images/consultation.svg",
                       title: "Consultation",
-                      description: "Quality services rendered to all planning.",
+                      description: "Our construction and real estate consultation service cover project planning, building approvals, cost estimation, environmental impact checks, and investment analysis. We guide property owners, investors, and developers across Nigeria and West Africa in making informed, profitable decisions.",
                     },
                   ].map((service, index) => (
                     <div
