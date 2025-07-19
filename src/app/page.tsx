@@ -239,7 +239,7 @@ export default function Home() {
 <section className="bg-[#0D8C6D] text-white py-16">
   <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
     <div className="grid md:grid-cols-2 gap-10">
-      <SlideInSection direction="right">
+      <SlideInSection direction="right" className="">
         <div>
           <h5 className="uppercase tracking-wide font-semibold">
             What We Do
@@ -247,7 +247,7 @@ export default function Home() {
           </h5>
           <h2 className="text-4xl font-bold mt-2">Our Services</h2>
           <p className="text-lg mt-4">
-            Our range of professional services is designed to support clients across the construction and real estate industries — from early-stage planning to project execution and beyond. Whether you’re building in Nigeria, Ghana, or Togo, Sinocle Nigeria Limited delivers solutions that combine innovation, compliance, and technical precision.
+            Sinocle Nigeria Limited offers full-spectrum construction and real estate services in Nigeria, Ghana, and Togo — including architectural design, infrastructure development, project management, and property consulting. Our team is committed to delivering quality, innovation, and compliance across every project.
           </p>
           <Link href="/services">
             <button className="mt-6 border border-white text-white py-2 px-6 hover:bg-white hover:text-[#0D8C6D] transition">
@@ -257,76 +257,68 @@ export default function Home() {
         </div>
       </SlideInSection>
 
-      <SlideInSection direction="left">
+      <SlideInSection direction="left" className="">
         <div className="space-y-6">
-
-          {/* Architectural Design Services */}
           <div className="flex items-start gap-4 border-t border-white pt-4">
-            <span className="text-white text-2xl">🏛</span>
+            <span className="text-2xl text-white">🏛</span>
             <div>
               <h4 className="text-xl font-semibold">Architectural Design Services</h4>
               <p className="text-sm">
-                We offer innovative and functional architectural design services across Nigeria, Ghana, and Togo — including concept development, working drawings, 3D visualizations, and regulatory-compliant building plans.
+                Innovative and functional architectural design solutions, including concept development, building plans, 3D visualization, and regulatory approvals.
               </p>
             </div>
           </div>
 
-          {/* Building Construction */}
           <div className="flex items-start gap-4 border-t border-white pt-4">
-            <span className="text-white text-2xl">🏗</span>
+            <span className="text-2xl text-white">🏗</span>
             <div>
               <h4 className="text-xl font-semibold">Building Construction</h4>
               <p className="text-sm">
-                We handle full-cycle construction for residential, commercial, and institutional buildings — from foundation work to roofing and finishing.
+                Comprehensive building construction services — from foundation to finishing — for residential, commercial, and institutional projects.
               </p>
             </div>
           </div>
 
-          {/* Real Estate Development */}
           <div className="flex items-start gap-4 border-t border-white pt-4">
-            <span className="text-white text-2xl">🏘</span>
+            <span className="text-2xl text-white">🏘</span>
             <div>
               <h4 className="text-xl font-semibold">Real Estate Development & Management</h4>
               <p className="text-sm">
-                From land acquisition and site analysis to development planning and facility management, we deliver end-to-end real estate solutions across West Africa.
+                From land acquisition and feasibility analysis to development execution and property management, we deliver end-to-end real estate services.
               </p>
             </div>
           </div>
 
-          {/* Infrastructure Development */}
           <div className="flex items-start gap-4 border-t border-white pt-4">
-            <span className="text-white text-2xl">🛣</span>
+            <span className="text-2xl text-white">🛣</span>
             <div>
               <h4 className="text-xl font-semibold">Infrastructure Development</h4>
               <p className="text-sm">
-                We execute large-scale infrastructure projects including roads, drainage systems, erosion control, and utilities for government and private clients.
+                Construction of roads, drainages, erosion control systems, and other civil works — delivered with technical precision and sustainability in mind.
               </p>
             </div>
           </div>
 
-          {/* Project Management */}
           <div className="flex items-start gap-4 border-t border-white pt-4">
-            <span className="text-white text-2xl">📋</span>
+            <span className="text-2xl text-white">📋</span>
             <div>
               <h4 className="text-xl font-semibold">Project Management & Supervision</h4>
               <p className="text-sm">
-                Our team oversees timelines, procurement, budgets, and quality control — ensuring projects are delivered efficiently and professionally.
+                End-to-end project coordination including budgeting, procurement, contractor supervision, and timeline management for successful project delivery.
               </p>
             </div>
           </div>
 
-          {/* Consultation & Advisory */}
           <div className="flex items-start gap-4 border-t border-white pt-4">
-            <span className="text-white text-2xl">🧭</span>
+            <span className="text-2xl text-white">🧭</span>
             <div>
               <h4 className="text-xl font-semibold">Consultation & Advisory Services</h4>
               <p className="text-sm">
-                We provide expert advisory on land verification, building permits, cost forecasting, and investment decisions across the construction and real estate lifecycle.
+                Strategic advisory on construction permits, investment analysis, BOQs, planning approvals, and development regulations across West Africa.
               </p>
             </div>
           </div>
 
-          {/* Specialty Services */}
           <div className="border-t border-white pt-6">
             <h4 className="text-xl font-semibold mb-2">🛠 Specialty Services</h4>
             <ul className="list-disc list-inside text-sm space-y-1">
@@ -336,7 +328,6 @@ export default function Home() {
               <li>Interior Design & Space Planning</li>
             </ul>
           </div>
-
         </div>
       </SlideInSection>
     </div>
