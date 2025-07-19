@@ -98,7 +98,7 @@ export default function Home() {
               Construction and Real Estate Solutions Across West Africa
             </h1>
             <p className="text-sm sm:text-lg lg:text-2xl text-white mt-4">
-              At Sinocle Nigeria Limited, we provide full-service construction, architectural design, real estate development, and infrastructure solutions<br className="hidden sm:block" />
+              At Sinocle Nigeria Limited, we provide full-service construction, architectural design, real estate development, and infrastructure solutions <br className="hidden sm:block" />
                executed with precision, superior quality, and timely delivery.
             </p>
 
