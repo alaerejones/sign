@@ -335,63 +335,87 @@ export default function Home() {
 </section>
 
         {/* Recent Projects Section */}
-        <SlideInSection direction="left" className="">
-          <section className="bg-gray-50 py-16">
-            <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
-              <div className="text-center">
-                <h2 className="text-3xl font-bold text-gray-900">
-                  Recent Projects
-                </h2>
-                <div className="mt-2 flex justify-center">
-                  <span className="inline-block w-12 h-[2px] bg-[#0D8C6D]"></span>
-                </div>
-              </div>
+      
+{/* Recent Projects Section */}
+<SlideInSection direction="left" className="">
+  <section className="bg-gray-50 py-16">
+    <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
+      <div className="text-center">
+        <h2 className="text-3xl font-bold text-gray-900">
+          Featured Projects
+        </h2>
+        <p className="mt-4 max-w-2xl mx-auto text-gray-700 text-sm sm:text-base">
+          From high-rise residential buildings to infrastructure development across cities, our portfolio reflects a strong commitment to quality, durability, and innovation. These featured project types represent the scale and diversity of work handled by our expert team across Nigeria and West Africa.
+        </p>
+        <div className="mt-2 flex justify-center">
+          <span className="inline-block w-12 h-[2px] bg-[#0D8C6D]"></span>
+        </div>
+      </div>
 
-              <div className="grid md:grid-cols-3 gap-6 mt-10">
-                {projects.map((project, index) => (
-                  <div
-                    key={index}
-                    className="bg-white shadow-md rounded-lg overflow-hidden"
-                  >
-                    <div className="relative w-full h-48">
-                      <Image
-                        src={project.image}
-                        alt={project.title}
-                        layout="fill"
-                        objectFit="cover"
-                        className="rounded-t-lg"
-                      />
-                    </div>
-                    <div className="p-6 text-center">
-                      <h4 className="text-lg font-semibold text-gray-800">
-                        {project.title}
-                      </h4>
-                      <p className="text-[#999999] text-sm mt-2">
-                        {project.description}
-                      </p>
-                      <Link href="/projects">
-                        <button className="mt-4 border border-gray-800 text-gray-800 py-2 px-4 hover:bg-gray-800 hover:text-white transition">
-                          View Project
-                        </button>
-                      </Link>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="text-center mt-10">
-                <Link href="/projects">
-                  <button className="border border-gray-800 text-gray-800 py-2 px-6 hover:bg-gray-800 hover:text-white transition">
-                    View All{" "}
-                    <span className="ml-2 font-serif text-[16px] leading-[10px]">
-                      ↗
-                    </span>
-                  </button>
-                </Link>
-              </div>
+      <div className="grid md:grid-cols-3 gap-6 mt-10">
+        {[
+          {
+            image: "/images/r1.png",
+            title: "Urban Commercial Complex",
+            description:
+              "Multi-story developments designed for businesses and commerce — combining aesthetics, safety, and functionality.",
+          },
+          {
+            image: "/images/r2.png",
+            title: "Private Residential Estate",
+            description:
+              "Gated residential layouts with modern housing units, green areas, internal roads, and utility infrastructure.",
+          },
+          {
+            image: "/images/r3.png",
+            title: "Infrastructure & Drainage Works",
+            description:
+              "Urban roadways, stormwater drainages, culverts, and erosion control systems built for long-term resilience.",
+          },
+        ].map((project, index) => (
+          <div
+            key={index}
+            className="bg-white shadow-md rounded-lg overflow-hidden"
+          >
+            <div className="relative w-full h-48">
+              <Image
+                src={project.image}
+                alt={project.title}
+                layout="fill"
+                objectFit="cover"
+                className="rounded-t-lg"
+              />
             </div>
-          </section>
-        </SlideInSection>
+            <div className="p-6 text-center">
+              <h4 className="text-lg font-semibold text-gray-800">
+                {project.title}
+              </h4>
+              <p className="text-[#999999] text-sm mt-2">
+                {project.description}
+              </p>
+              <Link href="/projects">
+                <button className="mt-4 border border-gray-800 text-gray-800 py-2 px-4 hover:bg-gray-800 hover:text-white transition">
+                  View Project
+                </button>
+              </Link>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="text-center mt-10">
+        <Link href="/projects">
+          <button className="border border-gray-800 text-gray-800 py-2 px-6 hover:bg-gray-800 hover:text-white transition">
+            View All{" "}
+            <span className="ml-2 font-serif text-[16px] leading-[10px]">
+              ↗
+            </span>
+          </button>
+        </Link>
+      </div>
+    </div>
+  </section>
+</SlideInSection>
 
         {/* Stats Section */}
         <SlideInSection direction="down" className="">
