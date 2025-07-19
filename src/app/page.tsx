@@ -12,26 +12,7 @@ import {
 
 const images = ["/images/1.png", "/images/2.png", "/images/3.png"];
 
-const projects = [
-  {
-    image: "/images/r1.png",
-    title: "High-Rise Construction",
-    description:
-      "An advanced skyscraper project focusing on innovative architecture and structural stability.",
-  },
-  {
-    image: "/images/r2.png",
-    title: "Modern Residential Complex",
-    description:
-      "A cutting-edge residential estate designed for sustainability and community living.",
-  },
-  {
-    image: "/images/r3.png",
-    title: "Urban Infrastructure",
-    description:
-      "Revitalizing city landscapes with modern bridges, roads, and eco-friendly urban planning.",
-  },
-];
+
 
 export default function Home() {
   const [currentImage, setCurrentImage] = useState(0);
