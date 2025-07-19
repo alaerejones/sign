@@ -93,13 +93,13 @@ export default function Home() {
           {/* Hero Text */}
           <div className="absolute top-1/2 -translate-y-1/2">
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif text-white font-bold">
-              Building The Future, One <br className="hidden sm:block" />{" "}
-              Project at a Time
+              Delivering Exceptional
+ <br className="hidden sm:block" />{" "}
+              Construction and Real Estate Solutions Across West Africa
             </h1>
             <p className="text-sm sm:text-lg lg:text-2xl text-white mt-4">
-              From the onset till now, our mission remains centered on
-              delivering <br className="hidden sm:block" />
-              projects of superior quality, always on schedule.
+              At Sinocle Nigeria Limited, we provide full-service construction, architectural design, real estate development, and infrastructure solutions<br className="hidden sm:block" />
+              executed with precision, superior quality, and timely delivery.
             </p>
 
             {/* CTA Buttons */}
