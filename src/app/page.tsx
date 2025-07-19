@@ -181,7 +181,7 @@ export default function Home() {
             Leading Construction and Real Estate Company in Nigeria, Ghana & Togo
             <span className="inline-block w-12 h-[2px] bg-black ml-2"></span>
           </p>
-          <h1 className="text-3xl md:text-4xl lg:text-[50px] font-bold leading-tight text-black">
+          <h1 className="text-2xl md:text-2xl lg:text-[50px] font-bold leading-tight text-black">
             Sinocle Nigeria Limited
           </h1>
           <div className="space-y-4 text-black text-base md:text-lg">
@@ -226,7 +226,7 @@ export default function Home() {
             What We Do
             <span className="inline-block w-12 h-[2px] bg-white ml-2"></span>
           </h5>
-          <h2 className="text-4xl font-bold mt-2">Our Services</h2>
+          <h2 className="text-2xl font-bold mt-2">Our Services</h2>
           <p className="text-lg mt-4">
             Sinocle Nigeria Limited offers full-spectrum construction and real estate services in Nigeria, Ghana, and Togo — including architectural design, infrastructure development, project management, and property consulting. Our team is committed to delivering quality, innovation, and compliance across every project.
           </p>
@@ -320,7 +320,7 @@ export default function Home() {
   <section className="bg-[#F5F5F5] py-20">
     <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
       <div className="text-center">
-        <h2 className="text-3xl font-bold text-gray-900">
+        <h2 className="text-2xl font-bold text-gray-900">
           Proven Excellence Across West Africa
         </h2>
         <p className="mt-4 max-w-2xl mx-auto text-gray-700 text-base">
