@@ -343,7 +343,7 @@ export default function Home() {
               "Multi-story developments designed for businesses and commerce — combining aesthetics, safety, and functionality.",
           },
           {
-            image: "/images/r2.png",
+            image: "/images/estate.jpg",
             title: "Private Residential Estate",
             category: "Residential",
             description:
