@@ -5,10 +5,6 @@ import SlideInSection from "@/components/SlideInSection";
 import ClientReviews from "@/components/ClientReviews";
 import { useState, useEffect } from "react";
 import {
-  Building2,
-  Briefcase,
-  Scale,
-  ClipboardCheck,
   CircleDollarSign,
   CheckCircle,
   UsersRound,
