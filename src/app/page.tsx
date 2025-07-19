@@ -336,7 +336,7 @@ export default function Home() {
       <div className="grid md:grid-cols-3 gap-8 mt-14">
         {[
           {
-            image: "/images/r1.png",
+            image: "/images/pukka_mall.jpg",
             title: "Urban Commercial Complex",
             category: "Commercial",
             description:
