@@ -221,7 +221,7 @@ export default function Home() {
               We serve private clients, real estate investors, institutions, and government bodies, helping them bring bold ideas to life with precision, professionalism, and integrity in property design and development.
             </p>
             <p>
-              Whether you’re looking for a construction company, a real estate developer or an architectural design firm in Asaba, Lagos, Abuja, Lomé, Accra or other West African cities, Sinocle Nigeria Limited is your trusted partner across West Africa.
+              Whether you’re looking for a construction company, a real estate developer or an architectural design firm in Asaba, Lagos, Abuja, Lomé, Accra or other cities, Sinocle Nigeria Limited is your trusted partner across West Africa.
             </p>
             <p>
               <strong>Want to know what makes us different?</strong> 
