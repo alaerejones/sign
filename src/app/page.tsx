@@ -209,7 +209,7 @@ export default function Home() {
           </h1>
           <div className="space-y-4 text-black text-base md:text-lg">
             <p>
-              Sinocle Nigeria Limited is a trusted construction and real estate company operating across Nigeria, Ghana, and Togo — with active projects in Lagos, Abuja, Port Harcourt, Accra, and Lomé. Headquartered in Asaba, Delta State, we specialize in:
+              Sinocle Nigeria Limited is a trusted construction and real estate company operating across Nigeria, Ghana, and Togo, with active projects in Lagos, Abuja, Port Harcourt, Asaba, Accra, and Lomé. Headquartered in Asaba, Delta State, we specialize in:
             </p>
             <ul className="list-disc list-inside">
               <li>Building construction (residential, commercial, and public infrastructure)</li>
@@ -218,10 +218,10 @@ export default function Home() {
               <li>Land acquisition, property consulting, and infrastructure delivery</li>
             </ul>
             <p>
-              We serve private clients, real estate investors, institutions, and government bodies — helping them bring bold ideas to life with precision, professionalism, and integrity.
+              We serve private clients, real estate investors, institutions, and government bodies, helping them bring bold ideas to life with precision, professionalism, and integrity in property design and development.
             </p>
             <p>
-              Whether you’re looking for a construction company in Lagos, a real estate developer in Accra, or an architectural design firm in Lomé, Sinocle Nigeria Limited is your trusted partner across West Africa.
+              Whether you’re looking for a construction company, a real estate developer or an architectural design firm in Asaba, Lagos, Abuja, Lomé, Accra or other West African cities, Sinocle Nigeria Limited is your trusted partner across West Africa.
             </p>
             <p>
               <strong>Ready to start your next project?</strong> <Link href="/contact" className="text-[#0D8C6D] underline">Contact us today</Link> for a quote or consultation.
