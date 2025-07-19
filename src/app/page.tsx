@@ -350,14 +350,14 @@ export default function Home() {
               "Gated residential layouts with modern housing units, green areas, internal roads, and utility infrastructure.",
           },
           {
-            image: "/images/r3.png",
+            image: "/images/real_estate.jpg",
             title: "Infrastructure & Drainage Works",
             category: "Infrastructure",
             description:
               "Urban roadways, stormwater drainages, culverts, and erosion control systems built for long-term resilience.",
           },
           {
-            image: "/images/r4.png",
+            image: "/images/real_estate.jpg",
             title: "Real Estate Partnership Build",
             category: "Real Estate",
             description:
