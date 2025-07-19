@@ -9,6 +9,7 @@ import {
   CheckCircle,
   UsersRound,
 } from "lucide-react";
+import { useRef } from "react";
 
 const images = ["/images/1.png", "/images/2.png", "/images/3.png"];
 
@@ -406,35 +407,69 @@ export default function Home() {
 </SlideInSection>
 
         {/* Stats Section */}
-        <SlideInSection direction="down" className="">
-          <section className="w-full max-w-6xl mx-auto py-12 px-4 ">
-            <p className="text-left font-serif text-[16px] font-thin mb-10 w-[70%] text-[#999999]">
-              At Sincole, we don&apos;t just offer solutions; we craft
-              collaborative roadmaps tailored to your unique needs, ensuring
-              your buildings not only thrives in the present but also remains
-              resilient in the face of future challenges.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {stats.map((stat, index) => {
-                const Icon = stat.icon;
-                return (
-                  <div
-                    key={index}
-                    className="flex flex-col items-center text-center"
-                  >
-                    <div className="mb-4">
-                      <Icon className="w-12 h-12 text-gray-600" />
-                    </div>
-                    <h2 className="text-4xl font-bold mb-2 text-black ">
-                      {stat.value}
-                    </h2>
-                    <p className="text-[#999999]">{stat.description}</p>
-                  </div>
-                );
-              })}
+      {/* Stats Section */}
+<SlideInSection direction="down" className="">
+  <section className="w-full max-w-6xl mx-auto py-20 px-4">
+    <p className="text-left font-serif text-[16px] font-thin mb-10 w-[70%] text-[#999999]">
+      At Sinocle, we don't just offer solutions; we craft collaborative roadmaps tailored to your unique needs, ensuring your buildings not only thrive in the present but also remain resilient in the face of future challenges.
+    </p>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {stats.map((stat, index) => {
+        const Icon = stat.icon;
+        const start = useRef<number>(0);
+        const endValue = parseInt(stat.value);
+        const duration = 1200; // 1.2 seconds
+        const countRef = useRef<HTMLSpanElement>(null);
+        const observerRef = useRef<IntersectionObserver | null>(null);
+
+        useEffect(() => {
+          const node = countRef.current;
+          if (!node) return;
+
+          let observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting && start.current === 0) {
+                  let current = 0;
+                  const stepTime = Math.abs(Math.floor(duration / endValue));
+                  const interval = setInterval(() => {
+                    current += 1;
+                    if (node) node.textContent = current.toString();
+                    if (current >= endValue) clearInterval(interval);
+                  }, stepTime);
+                  start.current = 1; // Prevent re-trigger
+                }
+              });
+            },
+            { threshold: 0.6 }
+          );
+
+          observer.observe(node);
+          observerRef.current = observer;
+
+          return () => observer.disconnect();
+        }, [endValue]);
+
+        return (
+          <div
+            key={index}
+            className="flex flex-col items-center text-center"
+          >
+            <div className="mb-4">
+              <Icon className="w-12 h-12 text-gray-600" />
             </div>
-          </section>
-        </SlideInSection>
+            <h2 className="text-4xl font-bold mb-2 text-black">
+              <span ref={countRef}>0</span>
+              {stat.value.includes("%") ? "%" : "+"}
+            </h2>
+            <p className="text-[#999999]">{stat.description}</p>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+</SlideInSection>        
 
         {/* Client Reviews Section */}
         <SlideInSection direction="down" className="">
