@@ -99,7 +99,7 @@ export default function Home() {
             </h1>
             <p className="text-sm sm:text-lg lg:text-2xl text-white mt-4">
               At Sinocle Nigeria Limited, we provide full-service construction, architectural design, real estate development, and infrastructure solutions<br className="hidden sm:block" />
-              executed with precision, superior quality, and timely delivery.
+               executed with precision, superior quality, and timely delivery.
             </p>
 
             {/* CTA Buttons */}
