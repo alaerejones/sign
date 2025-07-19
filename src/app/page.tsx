@@ -183,62 +183,61 @@ export default function Home() {
 
         {/* Who we are section */}
         <section className="py-16">
-          <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
-            <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-16">
-              <SlideInSection direction="right" className="w-full lg:w-1/2">
-                <div className="relative w-full">
-                  <Image
-                    src="/images/frame.png"
-                    alt="Company Overview"
-                    width={900}
-                    height={600}
-                    className="w-full h-auto object-contain"
-                    priority
-                  />
-                </div>
-              </SlideInSection>
+  <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
+    <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-16">
+      <SlideInSection direction="right" className="w-full lg:w-1/2">
+        <div className="relative w-full">
+          <Image
+            src="/images/frame.png"
+            alt="Company Overview"
+            width={900}
+            height={600}
+            className="w-full h-auto object-contain"
+            priority
+          />
+        </div>
+      </SlideInSection>
 
-              <SlideInSection direction="left" className="w-full lg:w-1/2">
-                <div className="text-left font-serif space-y-4">
-                  <p className="text-base text-[#0D8C6D] md:text-lg font-bold flex items-center">
-                    Who We are{" "}
-                    <span className="inline-block w-12 h-[2px] bg-black ml-2"></span>
-                  </p>
-                  <h1 className="text-3xl md:text-4xl lg:text-[50px] font-bold leading-tight text-black">
-                    Sincole Nigeria Limited
-                  </h1>
-                  <div className="space-y-4 text-black">
-                    <p className="text-base md:text-lg">
-                      At Sinocle Nigeria Limited, we are proud to be the leading
-                      real estate company in Nigeria, offering a comprehensive
-                      range of services in real estate development, property
-                      development and contract, real estate consulting, and land
-                      sales. With our headquarters situated in Asaba, Delta
-                      State, Nigeria, we operate across the nation, serving
-                      clients with professionalism, expertise, and integrity.
-                    </p>
-                    <p className="text-base md:text-lg">
-                      At the core of our organization lies a cohesive and
-                      accomplished team of professionals, brought together by a
-                      shared passion for bringing dreams to life. We take
-                      immense pride in our ability to transform your ideas into
-                      tangible realities, crafted with precision and attention
-                      to detail.
-                    </p>
-                  </div>
-                  <Link href="/about">
-                    <button className="bg-[#0D8C6D] text-white text-base md:text-lg px-6 py-2 font-medium hover:bg-[#38d1ab] transition-colors mt-6 flex items-center">
-                      More About Us
-                      <span className="ml-2 font-serif text-lg leading-none">
-                        ↗
-                      </span>
-                    </button>
-                  </Link>
-                </div>
-              </SlideInSection>
-            </div>
+      <SlideInSection direction="left" className="w-full lg:w-1/2">
+        <div className="text-left font-serif space-y-4">
+          <p className="text-base text-[#0D8C6D] md:text-lg font-bold flex items-center">
+            Leading Construction and Real Estate Company in Nigeria, Ghana & Togo
+            <span className="inline-block w-12 h-[2px] bg-black ml-2"></span>
+          </p>
+          <h1 className="text-3xl md:text-4xl lg:text-[50px] font-bold leading-tight text-black">
+            Sinocle Nigeria Limited
+          </h1>
+          <div className="space-y-4 text-black text-base md:text-lg">
+            <p>
+              Sinocle Nigeria Limited is a trusted construction and real estate company operating across Nigeria, Ghana, and Togo — with active projects in Lagos, Abuja, Port Harcourt, Accra, and Lomé. Headquartered in Asaba, Delta State, we specialize in:
+            </p>
+            <ul className="list-disc list-inside">
+              <li>Building construction (residential, commercial, and public infrastructure)</li>
+              <li>Real estate development and investment projects</li>
+              <li>Architectural design and structural planning</li>
+              <li>Land acquisition, property consulting, and infrastructure delivery</li>
+            </ul>
+            <p>
+              We serve private clients, real estate investors, institutions, and government bodies — helping them bring bold ideas to life with precision, professionalism, and integrity.
+            </p>
+            <p>
+              Whether you’re looking for a construction company in Lagos, a real estate developer in Accra, or an architectural design firm in Lomé, Sinocle Nigeria Limited is your trusted partner across West Africa.
+            </p>
+            <p>
+              <strong>Ready to start your next project?</strong> <Link href="/contact" className="text-[#0D8C6D] underline">Contact us today</Link> for a quote or consultation.
+            </p>
           </div>
-        </section>
+          <Link href="/about">
+            <button className="bg-[#0D8C6D] text-white text-base md:text-lg px-6 py-2 font-medium hover:bg-[#38d1ab] transition-colors mt-6 flex items-center">
+              More About Us
+              <span className="ml-2 font-serif text-lg leading-none">↗</span>
+            </button>
+          </Link>
+        </div>
+      </SlideInSection>
+    </div>
+  </div>
+</section>
 
         {/* What we do Section */}
         <section className="bg-[#0D8C6D] text-white py-16">
