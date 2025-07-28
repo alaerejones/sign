@@ -406,46 +406,35 @@ export default function Home() {
 </SlideInSection>
 
         {/* Stats Section */}
-        {/* Stats Section */}
-<SlideInSection direction="down" className="">
-  <section className="bg-white py-20">
-    <div className="max-w-6xl mx-auto px-4 md:px-8 lg:px-12">
-      {/* Intro Text */}
-      <div className="text-center max-w-3xl mx-auto mb-12">
-        <p className="text-lg md:text-xl text-gray-700 font-medium leading-relaxed">
-          At <strong>Sinocle Nigeria Limited</strong>, we don't just deliver buildings — we craft enduring value through expertise, precision, and collaboration. Our stats speak to the trust, consistency, and performance that define our legacy across West Africa.
-        </p>
-      </div>
-
-      {/* Stats Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
-        <div className="flex flex-col items-center">
-          <CircleDollarSign className="w-14 h-14 text-[#0D8C6D] mb-4" />
-          <h3 className="text-4xl font-bold text-gray-900">24+</h3>
-          <p className="text-sm text-gray-600 mt-2">
-            Years of collective experience in providing strategic consultancy and technical construction support
-          </p>
-        </div>
-
-        <div className="flex flex-col items-center">
-          <CheckCircle className="w-14 h-14 text-[#0D8C6D] mb-4" />
-          <h3 className="text-4xl font-bold text-gray-900">95%</h3>
-          <p className="text-sm text-gray-600 mt-2">
-            Client satisfaction rate — reflecting our commitment to quality, safety, and timely delivery
-          </p>
-        </div>
-
-        <div className="flex flex-col items-center">
-          <UsersRound className="w-14 h-14 text-[#0D8C6D] mb-4" />
-          <h3 className="text-4xl font-bold text-gray-900">20+</h3>
-          <p className="text-sm text-gray-600 mt-2">
-            A dedicated multidisciplinary team of engineers, architects, and project managers delivering excellence
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-</SlideInSection>
+        <SlideInSection direction="down" className="">
+          <section className="w-full max-w-6xl mx-auto py-12 px-4 ">
+            <p className="text-left font-serif text-[16px] font-thin mb-10 w-[70%] text-[#999999]">
+              At Sincole, we don&apos;t just offer solutions; we craft
+              collaborative roadmaps tailored to your unique needs, ensuring
+              your buildings not only thrives in the present but also remains
+              resilient in the face of future challenges.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {stats.map((stat, index) => {
+                const Icon = stat.icon;
+                return (
+                  <div
+                    key={index}
+                    className="flex flex-col items-center text-center"
+                  >
+                    <div className="mb-4">
+                      <Icon className="w-12 h-12 text-gray-600" />
+                    </div>
+                    <h2 className="text-4xl font-bold mb-2 text-black ">
+                      {stat.value}
+                    </h2>
+                    <p className="text-[#999999]">{stat.description}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </section>
+        </SlideInSection>
 
         {/* Client Reviews Section */}
         <SlideInSection direction="down" className="">
